@@ -52,11 +52,19 @@ navLinks.forEach(link => {
   navBar.append(listItem);
   }); 
 
-/*  a.forEach(function(currentValue) {
-    currentValue.style.textDecoration = "none";
-  });
-*/  
-  /* Figure out how to fix the styling to remove li bullets and
+// let linkStyle = document.querySelector("header.nav.a")
+// linkStyle.forEach(function(currentValue) {
+//     currentValue.style.textDecoration = "none";
+//     currentValue.style.color = "#b0b0b0";
+//   }); 
+/* Figure out how to fix the styling to remove li bullets and
   fix color */
 
 // Call To Action Section
+const header = document.querySelector("h1");
+header.innerText = siteContent.cta.h1;
+console.log(header);
+
+const btn = document.querySelector("button");
+btn.innerText = siteContent.cta.button;
+console.log(btn);
