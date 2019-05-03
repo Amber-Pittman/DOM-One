@@ -96,7 +96,7 @@ const mainContentImg = document.querySelector("#middle-img");
 mainContentImg.src = siteContent["main-content"]["middle-img-src"];
 console.log(mainContentImg);
 
-// Contact Info
+// Contact Info Section
 
 const contactHeader = document.querySelector(".contact h4");
 contactHeader.innerText = siteContent.contact["contact-h4"];
@@ -107,3 +107,9 @@ contactPara[0].innerText = siteContent.contact["address"];
 contactPara[1].innerText = siteContent.contact["phone"];
 contactPara[2].innerText = siteContent.contact["email"];
 console.log(contactPara);
+
+// Footer Section
+
+const footer = document.querySelector("footer");
+footer.innerText = siteContent.footer.copyright;
+console.log(footer);
