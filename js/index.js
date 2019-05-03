@@ -97,3 +97,13 @@ mainContentImg.src = siteContent["main-content"]["middle-img-src"];
 console.log(mainContentImg);
 
 // Contact Info
+
+const contactHeader = document.querySelector(".contact h4");
+contactHeader.innerText = siteContent.contact["contact-h4"];
+console.log(contactHeader);
+
+const contactPara = document.querySelectorAll(".contact p");
+contactPara[0].innerText = siteContent.contact["address"];
+contactPara[1].innerText = siteContent.contact["phone"];
+contactPara[2].innerText = siteContent.contact["email"];
+console.log(contactPara);
