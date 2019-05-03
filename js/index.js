@@ -51,6 +51,11 @@ navLinks.forEach(link => {
   listItem.textContent = link;
   navBar.append(listItem);
   }); 
+
+/*  a.forEach(function(currentValue) {
+    currentValue.style.textDecoration = "none";
+  });
+*/  
   /* Figure out how to fix the styling to remove li bullets and
   fix color */
 
