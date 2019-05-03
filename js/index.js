@@ -68,3 +68,8 @@ console.log(header);
 const btn = document.querySelector("button");
 btn.innerText = siteContent.cta.button;
 console.log(btn);
+
+const ctaImg = document.querySelector("#cta-img");
+ctaImg.scr = siteContent.cta["img-src"];
+console.log(ctaImg);
+//Image isn't displaying this way :/
