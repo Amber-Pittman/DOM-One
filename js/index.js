@@ -72,3 +72,14 @@ console.log(btn);
 const ctaImg = document.querySelector("#cta-img");
 ctaImg.src = siteContent.cta["img-src"];
 console.log(ctaImg);
+
+
+// Main Content Section
+let mainContentH4 = document.querySelectorAll('.main-content h4');
+mainContentH4[0].innerText = siteContent["main-content"]["features-h4"];
+mainContentH4[1].innerText = siteContent["main-content"]["about-h4"];
+mainContentH4[2].innerText = siteContent["main-content"]["services-h4"];
+mainContentH4[3].innerText = siteContent["main-content"]["product-h4"];
+mainContentH4[4].innerText = siteContent["main-content"]["vision-h4"];
+console.log(mainContentH4);
+// Is there a better way to make this work, like a DRY method?
