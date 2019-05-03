@@ -52,6 +52,13 @@ navLinks.forEach(link => {
   navBar.append(listItem);
   }); 
 
+// NEW NAV CONTENT
+const navText = document.querySelectorAll("nav");
+navText.forEach(function(currentValue) {
+  currentValue.style.color = "green";
+});
+console.log(navText);
+
 // let linkStyle = document.querySelector("header.nav.a")
 // linkStyle.forEach(function(currentValue) {
 //     currentValue.style.textDecoration = "none";
@@ -113,3 +120,5 @@ console.log(contactPara);
 const footer = document.querySelector("footer");
 footer.innerText = siteContent.footer.copyright;
 console.log(footer);
+
+
