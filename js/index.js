@@ -83,3 +83,11 @@ mainContentH4[3].innerText = siteContent["main-content"]["product-h4"];
 mainContentH4[4].innerText = siteContent["main-content"]["vision-h4"];
 console.log(mainContentH4);
 // Is there a better way to make this work, like a DRY method?
+
+let mainContentP = document.querySelectorAll('.main-content p');
+mainContentP[0].innerText = siteContent["main-content"]["features-content"];
+mainContentP[1].innerText = siteContent["main-content"]["about-content"];
+mainContentP[2].innerText = siteContent["main-content"]["services-content"];
+mainContentP[3].innerText = siteContent["main-content"]["product-content"];
+mainContentP[4].innerText = siteContent["main-content"]["vision-content"];
+console.log(mainContentP);
