@@ -59,13 +59,14 @@ navText.forEach(function(currentValue) {
 });
 console.log(navText);
 
-// let linkStyle = document.querySelector("header.nav.a")
-// linkStyle.forEach(function(currentValue) {
-//     currentValue.style.textDecoration = "none";
-//     currentValue.style.color = "#b0b0b0";
-//   }); 
-/* Figure out how to fix the styling to remove li bullets and
-  fix color */
+const newNavLinks = document.createElement("a");
+newNavLinks.textContent = "Testimonials";
+console.log(newNavLinks);
+const getOnThere = document.querySelector("nav");
+getOnThere.appendChild(newNavLinks); //I originally used .append() and it worked
+
+
+/* Figure out how to fix the styling to remove li bullets */
 
 // Call To Action Section
 const header = document.querySelector("h1");
