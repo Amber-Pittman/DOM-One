@@ -38,5 +38,20 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+let logo = document.querySelector("#logo-img");
+logo.setAttribute("src", siteContent["nav"]["img-src"]);
+
+//Nav Bar
+let navLinks = ["Services", "Product", "Vision", "Features", "About", "Contact"];
+let navBar = document.querySelector("nav");
+console.log(navBar);
+
+navLinks.forEach(link => {
+  const listItem = document.createElement("li");
+  listItem.textContent = link;
+  navBar.append(listItem);
+  }); 
+  /* Figure out how to fix the styling to remove li bullets and
+  fix color */
+
+// Call To Action Section
