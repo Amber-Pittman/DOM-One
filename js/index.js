@@ -65,6 +65,12 @@ console.log(newNavLinks);
 const getOnThere = document.querySelector("nav");
 getOnThere.appendChild(newNavLinks); //I originally used .append() and it worked
 
+const newNavLinks2 = document.createElement("a");
+newNavLinks2.textContent = "Careers";
+console.log(newNavLinks2);
+const frontOfTheLine = document.querySelector("nav");
+frontOfTheLine.prepend(newNavLinks2);
+
 
 /* Figure out how to fix the styling to remove li bullets */
 
