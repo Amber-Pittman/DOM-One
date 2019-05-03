@@ -91,3 +91,9 @@ mainContentP[2].innerText = siteContent["main-content"]["services-content"];
 mainContentP[3].innerText = siteContent["main-content"]["product-content"];
 mainContentP[4].innerText = siteContent["main-content"]["vision-content"];
 console.log(mainContentP);
+
+const mainContentImg = document.querySelector("#middle-img");
+mainContentImg.src = siteContent["main-content"]["middle-img-src"];
+console.log(mainContentImg);
+
+// Contact Info
