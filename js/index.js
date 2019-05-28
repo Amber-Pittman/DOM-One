@@ -38,5 +38,94 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+let logo = document.querySelector("#logo-img");
+logo.setAttribute("src", siteContent["nav"]["img-src"]);
+
+//Nav Bar
+let navLinks = ["Services", "Product", "Vision", "Features", "About", "Contact"];
+let navBar = document.querySelector("nav");
+console.log(navBar);
+
+navLinks.forEach(link => {
+  const listItem = document.createElement("li");
+  listItem.textContent = link;
+  navBar.append(listItem);
+  }); 
+
+// NEW NAV CONTENT
+const navText = document.querySelectorAll("nav");
+navText.forEach(function(currentValue) {
+  currentValue.style.color = "green";
+});
+console.log(navText);
+
+const newNavLinks = document.createElement("a");
+newNavLinks.textContent = "Testimonials";
+console.log(newNavLinks);
+const getOnThere = document.querySelector("nav");
+getOnThere.appendChild(newNavLinks); //I originally used .append() and it worked
+
+const newNavLinks2 = document.createElement("a");
+newNavLinks2.textContent = "Careers";
+console.log(newNavLinks2);
+const frontOfTheLine = document.querySelector("nav");
+frontOfTheLine.prepend(newNavLinks2);
+
+
+/* Figure out how to fix the styling to remove li bullets */
+
+// Call To Action Section
+const header = document.querySelector("h1");
+header.innerText = siteContent.cta.h1;
+console.log(header);
+
+const btn = document.querySelector("button");
+btn.innerText = siteContent.cta.button;
+console.log(btn);
+
+const ctaImg = document.querySelector("#cta-img");
+ctaImg.src = siteContent.cta["img-src"];
+console.log(ctaImg);
+
+
+// Main Content Section
+let mainContentH4 = document.querySelectorAll('.main-content h4');
+mainContentH4[0].innerText = siteContent["main-content"]["features-h4"];
+mainContentH4[1].innerText = siteContent["main-content"]["about-h4"];
+mainContentH4[2].innerText = siteContent["main-content"]["services-h4"];
+mainContentH4[3].innerText = siteContent["main-content"]["product-h4"];
+mainContentH4[4].innerText = siteContent["main-content"]["vision-h4"];
+console.log(mainContentH4);
+// Is there a better way to make this work, like a DRY method?
+
+let mainContentP = document.querySelectorAll('.main-content p');
+mainContentP[0].innerText = siteContent["main-content"]["features-content"];
+mainContentP[1].innerText = siteContent["main-content"]["about-content"];
+mainContentP[2].innerText = siteContent["main-content"]["services-content"];
+mainContentP[3].innerText = siteContent["main-content"]["product-content"];
+mainContentP[4].innerText = siteContent["main-content"]["vision-content"];
+console.log(mainContentP);
+
+const mainContentImg = document.querySelector("#middle-img");
+mainContentImg.src = siteContent["main-content"]["middle-img-src"];
+console.log(mainContentImg);
+
+// Contact Info Section
+
+const contactHeader = document.querySelector(".contact h4");
+contactHeader.innerText = siteContent.contact["contact-h4"];
+console.log(contactHeader);
+
+const contactPara = document.querySelectorAll(".contact p");
+contactPara[0].innerText = siteContent.contact["address"];
+contactPara[1].innerText = siteContent.contact["phone"];
+contactPara[2].innerText = siteContent.contact["email"];
+console.log(contactPara);
+
+// Footer Section
+
+const footer = document.querySelector("footer");
+footer.innerText = siteContent.footer.copyright;
+console.log(footer);
+
+
