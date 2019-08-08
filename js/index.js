@@ -69,7 +69,7 @@ frontOfTheLine.prepend(newNavLinks2);
 
 const navText = document.querySelectorAll("a");
 navText.forEach(function(currentValue) {
-  currentValue.style.color = "green";
+  currentValue.style.color = "limegreen";  // I changed it to LimeGreen to match image better than regular Green
 });
 console.log(navText);
 
