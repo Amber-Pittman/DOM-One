@@ -50,6 +50,8 @@ navLinks.forEach(link => {
   const listItem = document.createElement("a");
   listItem.textContent = link;
   navBar.append(listItem);
+  navBar.style.margin = "50px 25px 10px 25px";
+  navBar.style.fontWeight = 600;
   }); 
 
 // NEW NAV CONTENT
