@@ -47,17 +47,12 @@ let navBar = document.querySelector("nav");
 console.log(navBar);
 
 navLinks.forEach(link => {
-  const listItem = document.createElement("li");
+  const listItem = document.createElement("a");
   listItem.textContent = link;
   navBar.append(listItem);
   }); 
 
 // NEW NAV CONTENT
-const navText = document.querySelectorAll("nav");
-navText.forEach(function(currentValue) {
-  currentValue.style.color = "green";
-});
-console.log(navText);
 
 const newNavLinks = document.createElement("a");
 newNavLinks.textContent = "Testimonials";
@@ -72,7 +67,12 @@ const frontOfTheLine = document.querySelector("nav");
 frontOfTheLine.prepend(newNavLinks2);
 
 
-/* Figure out how to fix the styling to remove li bullets */
+const navText = document.querySelectorAll("a");
+navText.forEach(function(currentValue) {
+  currentValue.style.color = "green";
+});
+console.log(navText);
+
 
 // Call To Action Section
 const header = document.querySelector("h1");
