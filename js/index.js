@@ -51,7 +51,7 @@ navLinks.forEach(link => {
   const listItem = document.createElement("a");
   listItem.textContent = link;
   navBar.append(listItem);
-  navBar.style.margin = "50px 0 10px 25px";
+  navBar.style.margin = "50px 25px 10px 10px";
   navBar.style.fontWeight = 600;
   }); 
 
@@ -66,7 +66,6 @@ getOnThere.appendChild(newNavLinks); //I originally used .append() and it worked
 const newNavLinks2 = document.createElement("a");
 newNavLinks2.textContent = "Careers";
 newNavLinks2.style.marginRight = "-100px";
-//newNavLinks2.style.marginLeft = "-25px";
 console.log(newNavLinks2);
 const frontOfTheLine = document.querySelector("nav");
 frontOfTheLine.prepend(newNavLinks2);
