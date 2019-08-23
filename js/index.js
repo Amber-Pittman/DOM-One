@@ -41,24 +41,22 @@ const siteContent = {
 let logo = document.querySelector("#logo-img");
 logo.setAttribute("src", siteContent["nav"]["img-src"]);
 
+
 //Nav Bar
 let navLinks = ["Services", "Product", "Vision", "Features", "About", "Contact"];
 let navBar = document.querySelector("nav");
 console.log(navBar);
 
 navLinks.forEach(link => {
-  const listItem = document.createElement("li");
+  const listItem = document.createElement("a");
   listItem.textContent = link;
   navBar.append(listItem);
+  navBar.style.margin = "50px 25px 10px 10px";
+  navBar.style.fontWeight = 600;
   }); 
 
-// NEW NAV CONTENT
-const navText = document.querySelectorAll("nav");
-navText.forEach(function(currentValue) {
-  currentValue.style.color = "green";
-});
-console.log(navText);
 
+// NEW NAV CONTENT
 const newNavLinks = document.createElement("a");
 newNavLinks.textContent = "Testimonials";
 console.log(newNavLinks);
@@ -67,12 +65,17 @@ getOnThere.appendChild(newNavLinks); //I originally used .append() and it worked
 
 const newNavLinks2 = document.createElement("a");
 newNavLinks2.textContent = "Careers";
+newNavLinks2.style.marginRight = "-100px";
 console.log(newNavLinks2);
 const frontOfTheLine = document.querySelector("nav");
 frontOfTheLine.prepend(newNavLinks2);
 
+const navText = document.querySelectorAll("a");
+navText.forEach(function(currentValue) {
+  currentValue.style.color = "limegreen";  // I changed it to LimeGreen to match image better than regular Green
+});
+console.log(navText);
 
-/* Figure out how to fix the styling to remove li bullets */
 
 // Call To Action Section
 const header = document.querySelector("h1");
@@ -110,8 +113,8 @@ const mainContentImg = document.querySelector("#middle-img");
 mainContentImg.src = siteContent["main-content"]["middle-img-src"];
 console.log(mainContentImg);
 
-// Contact Info Section
 
+// Contact Info Section
 const contactHeader = document.querySelector(".contact h4");
 contactHeader.innerText = siteContent.contact["contact-h4"];
 console.log(contactHeader);
@@ -122,8 +125,8 @@ contactPara[1].innerText = siteContent.contact["phone"];
 contactPara[2].innerText = siteContent.contact["email"];
 console.log(contactPara);
 
-// Footer Section
 
+// Footer Section
 const footer = document.querySelector("footer");
 footer.innerText = siteContent.footer.copyright;
 console.log(footer);
